@@ -1,0 +1,244 @@
+[2024-11-18 06:44:47,463 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC0. Skipping.
+[2024-11-18 06:44:47,463 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC1. Skipping.
+[2024-11-18 06:44:47,556 main.py:229 INFO] Detected system ID: KnownSystem.f2ea47b0a016
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+[2024-11-18 06:44:49,526 generate_conf_files.py:107 INFO] Generated measurements/ entries for f2ea47b0a016_TRT/stable-diffusion-xl/Offline
+[2024-11-18 06:44:49,527 __init__.py:46 INFO] Running command: python3 -m code.stable-diffusion-xl.tensorrt.harness --logfile_outdir="/home/cmuser/CM/repos/local/cache/761982743113416e/test_results/f2ea47b0a016-nvidia_original-gpu-tensorrt-vdefault-scc24-main/stable-diffusion-xl/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=5000 --test_mode="PerformanceOnly" --gpu_batch_size=8 --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/6cc4162a455f4255/inference/mlperf.conf" --tensor_path="build/preprocessed_data/coco2014-tokenized-sdxl/5k_dataset_final/" --use_graphs=true --user_conf_path="/home/cmuser/CM/repos/mlcommons@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/bcd91899c79d43c6b4551abe0118ca32.conf" --gpu_inference_streams=4 --gpu_copy_streams=2 --gpu_engines="./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan,./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan,./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan,./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan" --scenario Offline --model stable-diffusion-xl
+[2024-11-18 06:44:49,527 __init__.py:53 INFO] Overriding Environment
+[2024-11-18 06:44:53,394 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC0. Skipping.
+[2024-11-18 06:44:53,395 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC1. Skipping.
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+[2024-11-18 06:44:55,712 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:44:55,809 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:44:56,173 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 06:44:57,445 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 06:44:59,108 backend.py:104 INFO] Enabling cuda graphs for unet
+[2024-11-18 06:44:59,586 backend.py:162 INFO] captured graph for BS=1
+[2024-11-18 06:45:00,574 backend.py:162 INFO] captured graph for BS=2
+[2024-11-18 06:45:01,536 backend.py:162 INFO] captured graph for BS=3
+[2024-11-18 06:45:02,509 backend.py:162 INFO] captured graph for BS=4
+[2024-11-18 06:45:03,441 backend.py:162 INFO] captured graph for BS=5
+[2024-11-18 06:45:04,479 backend.py:162 INFO] captured graph for BS=6
+[2024-11-18 06:45:05,483 backend.py:162 INFO] captured graph for BS=7
+[2024-11-18 06:45:06,449 backend.py:162 INFO] captured graph for BS=8
+[2024-11-18 06:45:07,085 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:07,157 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:07,517 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:08,720 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:10,390 backend.py:104 INFO] Enabling cuda graphs for unet
+[2024-11-18 06:45:10,840 backend.py:162 INFO] captured graph for BS=1
+[2024-11-18 06:45:11,844 backend.py:162 INFO] captured graph for BS=2
+[2024-11-18 06:45:12,811 backend.py:162 INFO] captured graph for BS=3
+[2024-11-18 06:45:13,792 backend.py:162 INFO] captured graph for BS=4
+[2024-11-18 06:45:14,740 backend.py:162 INFO] captured graph for BS=5
+[2024-11-18 06:45:15,791 backend.py:162 INFO] captured graph for BS=6
+[2024-11-18 06:45:16,808 backend.py:162 INFO] captured graph for BS=7
+[2024-11-18 06:45:17,789 backend.py:162 INFO] captured graph for BS=8
+[2024-11-18 06:45:18,427 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:18,501 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:18,866 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:20,080 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:21,726 backend.py:104 INFO] Enabling cuda graphs for unet
+[2024-11-18 06:45:22,178 backend.py:162 INFO] captured graph for BS=1
+[2024-11-18 06:45:23,201 backend.py:162 INFO] captured graph for BS=2
+[2024-11-18 06:45:24,205 backend.py:162 INFO] captured graph for BS=3
+[2024-11-18 06:45:25,218 backend.py:162 INFO] captured graph for BS=4
+[2024-11-18 06:45:26,199 backend.py:162 INFO] captured graph for BS=5
+[2024-11-18 06:45:27,288 backend.py:162 INFO] captured graph for BS=6
+[2024-11-18 06:45:28,347 backend.py:162 INFO] captured graph for BS=7
+[2024-11-18 06:45:29,353 backend.py:162 INFO] captured graph for BS=8
+[2024-11-18 06:45:30,081 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:30,154 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:30,520 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:31,740 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:33,409 backend.py:104 INFO] Enabling cuda graphs for unet
+[2024-11-18 06:45:33,874 backend.py:162 INFO] captured graph for BS=1
+[2024-11-18 06:45:34,907 backend.py:162 INFO] captured graph for BS=2
+[2024-11-18 06:45:35,917 backend.py:162 INFO] captured graph for BS=3
+[2024-11-18 06:45:36,935 backend.py:162 INFO] captured graph for BS=4
+[2024-11-18 06:45:37,920 backend.py:162 INFO] captured graph for BS=5
+[2024-11-18 06:45:39,011 backend.py:162 INFO] captured graph for BS=6
+[2024-11-18 06:45:40,068 backend.py:162 INFO] captured graph for BS=7
+[2024-11-18 06:45:41,089 backend.py:162 INFO] captured graph for BS=8
+[2024-11-18 06:45:41,782 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:41,855 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:42,222 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:43,459 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:45,116 backend.py:104 INFO] Enabling cuda graphs for unet
+[2024-11-18 06:45:45,599 backend.py:162 INFO] captured graph for BS=1
+[2024-11-18 06:45:46,708 backend.py:162 INFO] captured graph for BS=2
+[2024-11-18 06:45:47,792 backend.py:162 INFO] captured graph for BS=3
+[2024-11-18 06:45:48,891 backend.py:162 INFO] captured graph for BS=4
+[2024-11-18 06:45:49,950 backend.py:162 INFO] captured graph for BS=5
+[2024-11-18 06:45:51,135 backend.py:162 INFO] captured graph for BS=6
+[2024-11-18 06:45:52,279 backend.py:162 INFO] captured graph for BS=7
+[2024-11-18 06:45:53,374 backend.py:162 INFO] captured graph for BS=8
+[2024-11-18 06:45:54,052 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:54,136 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:54,502 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:55,722 backend.py:79 INFO] Loading TensorRT engine: ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 06:45:57,357 backend.py:104 INFO] Enabling cuda graphs for unet
+[2024-11-18 06:45:57,789 backend.py:162 INFO] captured graph for BS=1
+[2024-11-18 06:45:58,798 backend.py:162 INFO] captured graph for BS=2
+[2024-11-18 06:45:59,778 backend.py:162 INFO] captured graph for BS=3
+[2024-11-18 06:46:00,763 backend.py:162 INFO] captured graph for BS=4
+[2024-11-18 06:46:01,712 backend.py:162 INFO] captured graph for BS=5
+[2024-11-18 06:46:02,745 backend.py:162 INFO] captured graph for BS=6
+[2024-11-18 06:46:03,745 backend.py:162 INFO] captured graph for BS=7
+[2024-11-18 06:46:04,706 backend.py:162 INFO] captured graph for BS=8
+[2024-11-18 06:46:04,714 harness.py:207 INFO] Start Warm Up!
+[2024-11-18 06:48:27,679 harness.py:209 INFO] Warm Up Done!
+[2024-11-18 06:48:27,679 harness.py:211 INFO] Start Test!
+[2024-11-18 06:48:38,858 backend.py:573 INFO] Device 0 has processed 8 samples
+[2024-11-18 06:48:39,033 backend.py:573 INFO] Device 2 has processed 8 samples
+[2024-11-18 06:48:39,116 backend.py:573 INFO] Device 0 has processed 8 samples
+[2024-11-18 06:48:39,134 backend.py:573 INFO] Device 4 has processed 8 samples
+[2024-11-18 06:48:39,240 backend.py:573 INFO] Device 1 has processed 8 samples
+[2024-11-18 06:48:39,243 backend.py:573 INFO] Device 1 has processed 8 samples
+[2024-11-18 06:48:39,380 backend.py:573 INFO] Device 5 has processed 8 samples
+[2024-11-18 06:48:39,441 backend.py:573 INFO] Device 5 has processed 8 samples
+[2024-11-18 06:48:39,560 backend.py:573 INFO] Device 3 has processed 8 samples
+[2024-11-18 06:48:39,742 backend.py:573 INFO] Device 2 has processed 8 samples
+[2024-11-18 06:48:40,258 backend.py:573 INFO] Device 3 has processed 8 samples
+[2024-11-18 06:48:40,619 backend.py:573 INFO] Device 4 has processed 8 samples
+[2024-11-18 06:48:50,018 backend.py:573 INFO] Device 0 has processed 16 samples
+[2024-11-18 06:48:50,449 backend.py:573 INFO] Device 2 has processed 16 samples
+[2024-11-18 06:48:50,678 backend.py:573 INFO] Device 0 has processed 16 samples
+[2024-11-18 06:48:50,697 backend.py:573 INFO] Device 4 has processed 16 samples
+[2024-11-18 06:48:50,802 backend.py:573 INFO] Device 1 has processed 16 samples
+[2024-11-18 06:48:50,967 backend.py:573 INFO] Device 1 has processed 16 samples
+[2024-11-18 06:48:51,224 backend.py:573 INFO] Device 5 has processed 16 samples
+[2024-11-18 06:48:51,224 backend.py:573 INFO] Device 5 has processed 16 samples
+[2024-11-18 06:48:51,622 backend.py:573 INFO] Device 3 has processed 16 samples
+[2024-11-18 06:48:51,818 backend.py:573 INFO] Device 2 has processed 16 samples
+[2024-11-18 06:48:52,834 backend.py:573 INFO] Device 3 has processed 16 samples
+[2024-11-18 06:48:53,725 backend.py:573 INFO] Device 4 has processed 16 samples
+[2024-11-18 06:49:01,117 backend.py:573 INFO] Device 0 has processed 24 samples
+[2024-11-18 06:49:01,939 backend.py:573 INFO] Device 2 has processed 24 samples
+[2024-11-18 06:49:02,237 backend.py:573 INFO] Device 4 has processed 24 samples
+[2024-11-18 06:49:02,374 backend.py:573 INFO] Device 0 has processed 24 samples
+[2024-11-18 06:49:02,461 backend.py:573 INFO] Device 1 has processed 24 samples
+[2024-11-18 06:49:02,687 backend.py:573 INFO] Device 1 has processed 24 samples
+[2024-11-18 06:49:02,968 backend.py:573 INFO] Device 5 has processed 24 samples
+[2024-11-18 06:49:03,018 backend.py:573 INFO] Device 5 has processed 24 samples
+[2024-11-18 06:49:03,653 backend.py:573 INFO] Device 3 has processed 24 samples
+[2024-11-18 06:49:03,999 backend.py:573 INFO] Device 2 has processed 24 samples
+[2024-11-18 06:49:05,536 backend.py:573 INFO] Device 3 has processed 24 samples
+[2024-11-18 06:49:06,863 backend.py:573 INFO] Device 4 has processed 24 samples
+[2024-11-18 06:49:12,324 backend.py:573 INFO] Device 0 has processed 32 samples
+[2024-11-18 06:49:13,273 backend.py:573 INFO] Device 2 has processed 32 samples
+[2024-11-18 06:49:13,930 backend.py:573 INFO] Device 4 has processed 32 samples
+[2024-11-18 06:49:14,228 backend.py:573 INFO] Device 0 has processed 32 samples
+[2024-11-18 06:49:14,281 backend.py:573 INFO] Device 1 has processed 32 samples
+[2024-11-18 06:49:14,549 backend.py:573 INFO] Device 1 has processed 32 samples
+[2024-11-18 06:49:14,785 backend.py:573 INFO] Device 5 has processed 32 samples
+[2024-11-18 06:49:14,964 backend.py:573 INFO] Device 5 has processed 32 samples
+[2024-11-18 06:49:15,818 backend.py:573 INFO] Device 3 has processed 32 samples
+[2024-11-18 06:49:16,333 backend.py:573 INFO] Device 2 has processed 32 samples
+[2024-11-18 06:49:18,240 backend.py:573 INFO] Device 3 has processed 32 samples
+[2024-11-18 06:49:20,142 backend.py:573 INFO] Device 4 has processed 32 samples
+[2024-11-18 06:49:23,661 backend.py:573 INFO] Device 0 has processed 40 samples
+[2024-11-18 06:49:24,810 backend.py:573 INFO] Device 2 has processed 40 samples
+[2024-11-18 06:49:25,664 backend.py:573 INFO] Device 4 has processed 40 samples
+[2024-11-18 06:49:26,060 backend.py:573 INFO] Device 0 has processed 40 samples
+[2024-11-18 06:49:26,253 backend.py:573 INFO] Device 1 has processed 40 samples
+[2024-11-18 06:49:26,409 backend.py:573 INFO] Device 1 has processed 40 samples
+[2024-11-18 06:49:26,689 backend.py:573 INFO] Device 5 has processed 40 samples
+[2024-11-18 06:49:26,885 backend.py:573 INFO] Device 5 has processed 40 samples
+[2024-11-18 06:49:28,106 backend.py:573 INFO] Device 3 has processed 40 samples
+[2024-11-18 06:49:28,706 backend.py:573 INFO] Device 2 has processed 40 samples
+[2024-11-18 06:49:31,102 backend.py:573 INFO] Device 3 has processed 40 samples
+[2024-11-18 06:49:33,538 backend.py:573 INFO] Device 4 has processed 40 samples
+[2024-11-18 06:49:35,157 backend.py:573 INFO] Device 0 has processed 48 samples
+[2024-11-18 06:49:36,471 backend.py:573 INFO] Device 2 has processed 48 samples
+[2024-11-18 06:49:37,541 backend.py:573 INFO] Device 4 has processed 48 samples
+[2024-11-18 06:49:38,078 backend.py:573 INFO] Device 0 has processed 48 samples
+[2024-11-18 06:49:38,380 backend.py:573 INFO] Device 1 has processed 48 samples
+[2024-11-18 06:49:38,410 backend.py:573 INFO] Device 1 has processed 48 samples
+[2024-11-18 06:49:38,442 backend.py:944 INFO] [Server] Received 528 total samples
+[2024-11-18 06:49:38,442 backend.py:852 INFO] Device 7 is exiting as NORMAL
+[2024-11-18 06:49:38,443 backend.py:868 INFO] Device 3 is exiting as SERVER
+[2024-11-18 06:49:38,443 backend.py:852 INFO] Device 6 is exiting as NORMAL
+[2024-11-18 06:49:38,443 backend.py:868 INFO] Device 0 is exiting as SERVER
+[2024-11-18 06:49:38,443 backend.py:852 INFO] Device 11 is exiting as NORMAL
+[2024-11-18 06:49:38,444 backend.py:852 INFO] Device 9 is exiting as NORMAL
+[2024-11-18 06:49:38,444 backend.py:852 INFO] Device 8 is exiting as NORMAL
+[2024-11-18 06:49:38,444 backend.py:868 INFO] Device 5 is exiting as SERVER
+[2024-11-18 06:49:38,444 backend.py:868 INFO] Device 2 is exiting as SERVER
+[2024-11-18 06:49:38,444 backend.py:852 INFO] Device 10 is exiting as NORMAL
+[2024-11-18 06:49:38,445 backend.py:868 INFO] Device 1 is exiting as SERVER
+[2024-11-18 06:49:38,445 backend.py:868 INFO] Device 4 is exiting as SERVER
+[2024-11-18 06:49:38,445 backend.py:952 INFO] [Device 0] Reported 48 samples
+[2024-11-18 06:49:38,447 backend.py:952 INFO] [Device 1] Reported 48 samples
+[2024-11-18 06:49:38,447 backend.py:952 INFO] [Device 2] Reported 48 samples
+[2024-11-18 06:49:38,447 backend.py:952 INFO] [Device 3] Reported 40 samples
+[2024-11-18 06:49:38,447 backend.py:952 INFO] [Device 4] Reported 48 samples
+[2024-11-18 06:49:38,447 backend.py:952 INFO] [Device 5] Reported 40 samples
+[2024-11-18 06:49:38,447 harness.py:214 INFO] Test Done!
+[2024-11-18 06:49:38,447 harness.py:216 INFO] Destroying SUT...
+[2024-11-18 06:49:38,447 harness.py:219 INFO] Destroying QSL...
+benchmark : Benchmark.SDXL
+buffer_manager_thread_count : 0
+data_dir : /home/cmuser/CM/repos/local/cache/1613064ed35b4b8c/data
+gpu_batch_size : 8
+gpu_copy_streams : 2
+gpu_inference_streams : 4
+input_dtype : int32
+input_format : linear
+log_dir : /home/cmuser/CM/repos/local/cache/ecb37cb81bd04c3b/repo/closed/NVIDIA/build/logs/2024.11.18-06.44.41
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/6cc4162a455f4255/inference/mlperf.conf
+model_path : /home/cmuser/CM/repos/local/cache/1613064ed35b4b8c/models/SDXL/
+offline_expected_qps : 0.0
+precision : int8
+preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/1613064ed35b4b8c/preprocessed_data
+scenario : Scenario.Offline
+system : SystemConfiguration(host_cpu_conf=CPUConfiguration(layout={CPU(name='AMD EPYC 9754 128-Core Processor', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, core_count=128, threads_per_core=2): 2}), host_mem_conf=MemoryConfiguration(host_memory_capacity=Memory(quantity=1.58481268, byte_suffix=<ByteSuffix.TB: (1000, 4)>, _num_bytes=1584812680000), comparison_tolerance=0.05), accelerator_conf=AcceleratorConfiguration(layout=defaultdict(<class 'int'>, {GPU(name='NVIDIA H100 80GB HBM3', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=79.6474609375, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=85520809984), max_power_limit=700.0, pci_id='0x233010DE', compute_sm=90): 6})), numa_conf=NUMAConfiguration(numa_nodes={}, num_numa_nodes=8), system_id='f2ea47b0a016')
+tensor_path : build/preprocessed_data/coco2014-tokenized-sdxl/5k_dataset_final/
+test_mode : PerformanceOnly
+use_graphs : True
+user_conf_path : /home/cmuser/CM/repos/mlcommons@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/bcd91899c79d43c6b4551abe0118ca32.conf
+system_id : f2ea47b0a016
+config_name : f2ea47b0a016_stable-diffusion-xl_Offline
+workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99, PowerSetting.MaxP)
+optimization_level : plugin-enabled
+num_profiles : 2
+config_ver : custom_k_99_MaxP
+accuracy_level : 99%
+inference_server : custom
+skip_file_checks : False
+power_limit : None
+cpu_freq : None
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/f2ea47b0a016/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[2024-11-18 06:49:42,002 run_harness.py:166 INFO] Result: result_samples_per_second: 7.46497, Result is VALID
+ 
+======================== Result summaries: ========================
+
